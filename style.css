@@ -1,0 +1,80 @@
+.container{
+    margin-left: 50px;
+}
+
+
+body {
+    background-image: linear-gradient(to right,aqua,navy);
+    margin:right, 50px;
+    min-width: 300px;
+}
+
+*{
+    box-sizing: content-box;
+}
+#list {
+    width:80%;
+    padding: 15px;
+    float: left;
+    font-size: 15px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+.createButton {
+    padding: 10px;
+    width: 30%;
+    color: rgb(2, 1, 1);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+}
+.createButton:hover{
+    background-color: #cccccc;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    position: relative;
+    background-color: rgb(238, 237, 246);
+    list-style-type: disc;
+    cursor: pointer;padding: 10px 6px 10px 30px;
+    transition: 0.3s;
+
+
+ 
+}
+ul li:nth-child(odd){
+    background-color:rgb(235, 238, 237);
+}
+ul li.checked{
+    background: green;
+    color: white;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px 10px 15px;
+}
+.close:hover {
+    background-color: crimson;
+}
